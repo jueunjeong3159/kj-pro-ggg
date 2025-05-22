@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KJ Design</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .container {
+      display: flex;
+      height: 100%;
+      padding: 40px;
+    }
+    .sidebar {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    .sidebar a.sale {
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+    }
+    .main h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .main h2 {
+      font-size: 18px;
+      opacity: 0.85;
+    }
+    header, footer {
+      width: 100%;
+      text-align: right;
+      padding: 20px 40px;
+    }
+    header a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    footer button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span style="font-size: 22px; font-weight: bold;">KJ Design</span>
+    <a href="#">회사소개</a>
+    <a href="#">인테리어 사업부</a>
+    <a href="#">Gallery</a>
+    <a href="#">Q&A</a>
+  </header>
+  <div class="container">
+    <div class="sidebar">
+      <a href="#" class="sale">Sale</a>
+      <a href="#">Steel Design</a>
+      <a href="glam.html">Wood Design</a>
+      <a href="#">Bar</a>
+      <a href="#">Table Design</a>
+      <a href="#">Lounge Design</a>
+      <a href="#">Stool</a>
+      <a href="#">KJ Signature</a>
+    </div>
+    <div class="main">
+      <h1>지속 가능한 디자인,<br />공간을 빛나게 하다</h1>
+      <h2>차분한 조명 아래, 이야기를 담은 가구는 공간을 완성합니다</h2>
+    </div>
+  </div>
+  <footer>
+    <button>제작 상담하기</button>
+  </footer>
+</body>
+</html>
